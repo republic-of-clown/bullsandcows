@@ -6,25 +6,23 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
         <title>Bulls and Cows</title>
-        <script defer-src="main.js" src='live.js'></script>
+        <script defer-src="main.js" src="live.js"></script>
     </head>
     <body>
         <header>
-            <h3 class="sans">Bulls and Cows</h3>
+            <h3>Bulls and Cows</h3>
             <hr>
         </header>
         <main>
-            <article class="slab">
-                <p>On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches.</p>
-                <ul>
-                    <li>The matching digits are in their right positions, they are "bulls".</li>
-                    <li>The matching digits are in different positions, they are "cows".</li>
-                </ul>
-            </article>
+            <p>On a sheet of paper, the players each write a 4-digit secret number. The digits must be all different. Then, in turn, the players try to guess their opponent's number who gives the number of matches.</p>
+            <ul>
+                <li>The matching digits are in their right positions, they are "bulls".</li>
+                <li>The matching digits are in different positions, they are "cows".</li>
+            </ul>
             <h4>Game</h4>
-            <section>
-                <button class="slab" id="start" disabled>START</button>
-                <table class="slab">
+            <div id="game">
+                <button id="start" disabled>START</button>
+                <table>
                     <tr><th>1</th><td id="input_0"></td><td id="output_0"></td></tr>
                     <tr><th>2</th><td id="input_1"></td><td id="output_1"></td></tr>
                     <tr><th>3</th><td id="input_2"></td><td id="output_2"></td></tr>
@@ -37,7 +35,7 @@
                     <tr><td colspan="3" id="end">GAME OVER</td></tr>
                 </table>
                 <div>
-                    <select class="slab" id="digit_0">
+                    <select id="digit_0">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -49,7 +47,7 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                     </select>
-                    <select class="slab" id="digit_1">
+                    <select id="digit_1">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -61,7 +59,7 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                     </select>
-                    <select class="slab" id="digit_2">
+                    <select id="digit_2">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -73,7 +71,7 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                     </select>
-                    <select class="slab" id="digit_3">
+                    <select id="digit_3">
                         <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -85,10 +83,10 @@
                         <option value="8">8</option>
                         <option value="9">9</option>
                     </select>
-                    <button class="slab" id="random" disabled>RANDOM</button>
-                    <button class="slab" id="submit" disabled>SUBMIT</button>
+                    <button id="random" disabled>RANDOM</button>
+                    <button id="submit" disabled>SUBMIT</button>
                 </div>
-            </section>
+            </div>
         </main>
     </body>
 </html>

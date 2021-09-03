@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Josefin+Slab&display=swap');
 
-.sans {
+.sans, h3, h4 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.slab {
+.slab, button, li, p, select, table {
     font-family: 'Josefin Slab', serif;
 }
 
@@ -26,7 +26,7 @@ hr {
     border-width: thin;
 }
 
-section {
+#game {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -34,12 +34,12 @@ section {
     width: 96vmin;
 }
 
-section button {
+#game button {
     width: 20vmin;
     height: 2em;
 }
 
-section>div {
+#game div {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -48,39 +48,39 @@ section>div {
     width: 100%;
 }
 
-select {
+#game select {
     width: 10vmin;
     height: 2em;
 }
 
-table {
+#game table {
     margin-top: 1em;
     table-layout: fixed;
     width: 100%;
 }
 
-table, td, th {
+#game table, #game td, #game th {
     border: thin solid white;
     border-collapse: collapse;
 }
 
-tbody tr:nth-child(odd) {
+#game tbody tr:nth-child(odd) {
     background-color: lightgoldenrodyellow;
 }
 
-td {
+#game td {
     text-align: center;
     width: 40%;
     height: 1em;
 }
 
-td+td {
+#game td+td {
     text-align: center;
     width: 50%;
     height: 1em;
 }
 
-th {
+#game th {
     text-align: center;
     width: 10%;
     height: 1em;
